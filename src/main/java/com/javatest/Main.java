@@ -1,15 +1,20 @@
 package com.javatest;
 
-import java.util.Arrays;
-import java.util.List;
-import java.util.stream.Collectors;
+import java.util.Scanner;
 
 public class Main {
-    public static void main(String[] args) {
-        System.out.println("Hello world!");
-        List<String> list = Arrays.asList("Kayal","Senthil","Harini");
+        static String recursiveString(String str){
+            if(str ==null || (str.length() <= 1)) {
+                return str;
+            }
+            return recursiveString(str.substring(1)+str.charAt(0));
+        }
 
-        System.out.println(list.stream().filter(a->a.startsWith("K")).collect(Collectors.toList()));
+        public static void main(String[] arg){
+            Scanner sc=new Scanner(System.in);
+            int no= sc.nextInt();
+            System.out.println("Input - "+no);
 
-    }
-}
+        }
+   }
+
