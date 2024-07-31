@@ -25,6 +25,6 @@ public class greatestCommonDivisor {
 
     public static void main(String[] arg){
         greatestCommonDivisor gcd=new greatestCommonDivisor();
-        System.out.println(gcd.gcdStrings("ababababababab","ab"));
+        System.out.println(gcd.gcdStrings("bcbcbcbcddbdcbcxbcx","bc"));
     }
 }
